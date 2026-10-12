@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0E0E0E">
+  <title>KOMETA × DropOtvet, motion-ролик о смене стиля</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="wow.css">
+</head>
+
+<body>
+
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <nav class="section-dots" id="sectionDots" aria-hidden="true"></nav>
+  <div class="mobile-section-indicator" id="mobileSectionIndicator" aria-hidden="true"></div>
+
+  <div class="starfield" aria-hidden="true">
+    <div class="star-layer star-layer--small"></div>
+    <div class="star-layer star-layer--medium"></div>
+    <div class="star-layer star-layer--colored"></div>
+    <span class="accent-star accent-star--blue" style="width:3px;height:3px;top:12%;left:18%"></span>
+    <span class="accent-star accent-star--purple" style="width:4px;height:4px;top:24%;left:72%;animation-delay:-0.8s"></span>
+    <span class="accent-star accent-star--blue" style="width:3px;height:3px;top:38%;left:44%;animation-delay:-2s"></span>
+    <span class="accent-star accent-star--purple" style="width:3px;height:3px;top:55%;left:9%;animation-delay:-1.4s"></span>
+    <span class="accent-star accent-star--blue" style="width:4px;height:4px;top:68%;left:82%;animation-delay:-2.6s"></span>
+    <span class="accent-star accent-star--purple" style="width:3px;height:3px;top:81%;left:29%;animation-delay:-0.4s"></span>
+    <span class="accent-star accent-star--blue" style="width:3px;height:3px;top:92%;left:61%;animation-delay:-1.8s"></span>
+    <span class="accent-star accent-star--purple" style="width:4px;height:4px;top:6%;left:52%;animation-delay:-3s"></span>
+  </div>
+
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob ambient-blob--1"></div>
+    <div class="ambient-blob ambient-blob--2"></div>
+    <div class="ambient-blob ambient-blob--3"></div>
+    <div class="ambient-blob ambient-blob--4"></div>
+  </div>
+
+  <div class="page">
+
+    <header class="header">
+      <div class="container header__inner">
+        <img src="./images/kometa.png" alt="KOMETA logo" class="header__brand-logo">
+        <div class="header__label">Коммерческое предложение, 2026</div>
+        <div class="header__client">
+          <img src="./images/dropotvet-avatar.jpg" alt="DropOtvet" class="header__avatar">
+          <span class="header__client-name">DropOtvet</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero hero--compact" id="sec-hero" data-dot="Старт">
+      <div class="hero__orb hero__orb--blue" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--purple" aria-hidden="true"></div>
+      <div class="circuit" aria-hidden="true">
+        <div class="circuit__line circuit__line--r" style="top:18%;right:0;width:18%"></div>
+        <div class="circuit__line circuit__line--r" style="top:36%;right:0;width:25%"></div>
+        <div class="circuit__line circuit__line--r" style="top:55%;right:0;width:32%"></div>
+        <div class="circuit__line circuit__line--r" style="top:73%;right:0;width:39%"></div>
+        <div class="circuit__line circuit__line--r" style="top:89%;right:0;width:46%"></div>
+        <div class="circuit__line circuit__line--l" style="top:22%;left:0;width:14%"></div>
+        <div class="circuit__line circuit__line--l" style="top:40%;left:0;width:19%"></div>
+        <div class="circuit__line circuit__line--l" style="top:58%;left:0;width:24%"></div>
+        <div class="circuit__line circuit__line--l" style="top:76%;left:0;width:29%"></div>
+        <div class="circuit__line circuit__line--l" style="top:92%;left:0;width:34%"></div>
+      </div>
+      <div class="particles" aria-hidden="true" id="particles"></div>
+
+      <div class="container hero__content">
+        <div class="reveal" data-delay="0">
+          <div class="pill"><span class="pill__dot"></span>DropOtvet × Motion-ролик</div>
+        </div>
+
+        <h1 class="hero__title reveal" data-delay="80">MOTION-РОЛИК DROPOTVET</h1>
+        <h1 class="hero__title hero__title--gradient reveal" data-delay="140">О СМЕНЕ ФИРМЕННОГО СТИЛЯ</h1>
+
+        <p class="hero__text reveal" data-delay="200">
+          Сложная анимация и <span class="hl">профессиональный саунд-дизайн</span>
+        </p>
+
+        <div class="hero__meta reveal" data-delay="280">
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">Хронометраж</div>
+            <div class="hero__meta-value"><span class="counter" data-count="10">0</span> секунд</div>
+          </div>
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">Этапов работы</div>
+            <div class="hero__meta-value"><span class="counter" data-count="5">0</span></div>
+          </div>
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">Стоимость</div>
+            <div class="hero__meta-value">550 $</div>
+          </div>
+        </div>
+
+        <div class="hero__scroll-cue reveal" data-delay="340" aria-hidden="true">
+          <span>Листайте</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ПОЧЕМУ ЭТО ВАЖНЫЙ ШАГ ============ -->
+    <section class="section" id="sec-why" data-dot="Задача">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">WHY</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:32px">
+          <div class="pill"><span class="pill__dot"></span>Задача</div>
+          <h2 class="h2" style="margin-top:24px;max-width:760px">Почему это важный шаг</h2>
+        </div>
+
+        <div class="reveal" data-delay="60" style="max-width:800px">
+          <p class="p-body">
+            Три года фирменный стиль DropOtvet не менялся, и вот он меняется кардинально. Отказ от привычного оранжевого в пользу зеленого и полная смена визуала: <span class="hl">смелое и сильное решение</span>, и показать его нужно соответственно.
+          </p>
+          <p class="p-body" style="margin-bottom:0">
+            Идея сделать ролик именно про смену стиля очень удачная. Аудитория увидит перемену своими глазами, и это <span class="hl">работает на узнаваемость</span> лучше любого анонса. Для развития проекта это серьезный шаг, и ролик должен стать его заметным событием.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ЧТО МЫ ДЕЛАЕМ ============ -->
+    <section class="section" id="sec-idea" data-dot="Идея">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">IDEA</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:32px">
+          <div class="pill"><span class="pill__dot"></span>Идея</div>
+          <h2 class="h2" style="margin-top:24px;max-width:760px">Что мы делаем</h2>
+        </div>
+
+        <p class="p-body reveal" data-delay="60" style="max-width:800px">
+          Делаем motion-ролик длительностью 10 секунд, который показывает главное: как прежний стиль DropOtvet, с которым проект жил три года, превращается в свежий и красивый новый. Это не слайд-шоу с логотипом, а <span class="hl">полноценная анимационная история</span>, которая запоминается и работает на узнаваемость канала.
+        </p>
+
+        <div class="story glass reveal" data-delay="100">
+          <div class="mono-caption">Сюжет</div>
+          <div class="story__track" aria-hidden="true">
+            <span class="story__node"><span class="glow-dot glow-dot--orange" style="--size:6px"></span>Оранжевый</span>
+            <span class="story__line"></span>
+            <span class="story__node"><span class="glow-dot glow-dot--green" style="--size:6px"></span>Зеленый</span>
+          </div>
+          <p class="story__text">Привычный оранжевый стиль на глазах меняется на новый зеленый. Одним роликом мы показываем всю перемену целиком.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ НЕ ТИПОВОЙ РОЛИК ============ -->
+    <section class="section" id="sec-craft" data-dot="Подход">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">CRAFT</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:32px">
+          <div class="pill"><span class="pill__dot"></span>Подход</div>
+          <h2 class="h2" style="margin-top:24px;max-width:760px">Не типовой ролик, а персональная работа</h2>
+        </div>
+
+        <p class="p-body reveal" data-delay="60" style="max-width:800px">
+          Мы не делаем рядовой motion-ролик, какие можно встретить где угодно. Это <span class="hl">персональная работа под ключ</span>, выстроенная вокруг сюжета: она должна выглядеть серьезно и профессионально, как и сам момент смены стиля.
+        </p>
+
+        <div class="grid-3 reveal" data-delay="100">
+          <div class="craft-card glass">
+            <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1L18.5 8.5a2.1 2.1 0 00-3-3L5 16z"/><path d="M13.5 7.5l3 3"/></svg></div>
+            <h3 class="craft-card__title">Ручная анимация</h3>
+            <p class="craft-card__desc">Каждое движение анимирует и продумывает дизайнер. Никаких автоматических переходов и шаблонных эффектов от нейросетей.</p>
+          </div>
+          <div class="craft-card glass">
+            <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5.5A1.5 1.5 0 015 4h6v15.5H5a1.5 1.5 0 01-1.5-1.5z"/><path d="M20.5 5.5A1.5 1.5 0 0019 4h-6v15.5h6a1.5 1.5 0 001.5-1.5z"/></svg></div>
+            <h3 class="craft-card__title">Сюжет в основе</h3>
+            <p class="craft-card__desc">Ролик рассказывает историю перемены, а не просто показывает красивую картинку.</p>
+          </div>
+          <div class="craft-card glass">
+            <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15.5" r="4"/><path d="M11 12.5l8.5-8.5M16 7.5l2.2 2.2M13.8 9.7l2 2"/></svg></div>
+            <h3 class="craft-card__title">Под ключ</h3>
+            <p class="craft-card__desc">Идею, визуал, анимацию и звук делаем сами, от вас нужно только согласование.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ЧТО ВХОДИТ ============ -->
+    <section class="section" id="sec-scope" data-dot="Работа">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">SCOPE</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Что входит в работу</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Что входит</h2>
+        </div>
+
+        <div class="features-list">
+
+          <div class="feature-panel feature-panel--static glass is-open reveal" data-delay="0">
+            <div class="feature-panel__head">
+              <div class="feature-panel__head-left">
+                <div class="feature-panel__num">1</div>
+                <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5H7a2 2 0 00-2 2v13a2 2 0 002 2h10a2 2 0 002-2V8.5z"/><path d="M14 3.5v5h5"/><path d="M8.5 13h7M8.5 16.5h5"/></svg></div>
+                <h3 class="feature-panel__title">Сюжет и сценарий</h3>
+              </div>
+            </div>
+            <div class="feature-panel__body-wrap">
+              <div class="feature-panel__body">
+                <p class="feature-panel__intro">Придумываем историю смены стиля и расписываем ее по секундам.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-panel feature-panel--static glass is-open reveal" data-delay="40">
+            <div class="feature-panel__head">
+              <div class="feature-panel__head-left">
+                <div class="feature-panel__num">2</div>
+                <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="15" cy="12" r="5"/><path d="M3 9h5M2 12h6M3 15h5"/></svg></div>
+                <h3 class="feature-panel__title">Сложная анимация</h3>
+              </div>
+            </div>
+            <div class="feature-panel__body-wrap">
+              <div class="feature-panel__body">
+                <p class="feature-panel__intro">Анимируем вручную логотип, графику, паттерны, иконки и эмодзи нового стиля. <span class="hl">Движение продумано в каждом кадре.</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-panel feature-panel--static glass is-open reveal" data-delay="80">
+            <div class="feature-panel__head">
+              <div class="feature-panel__head-left">
+                <div class="feature-panel__num">3</div>
+                <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v4M8 7v10M12 4v16M16 8v8M20 11v2"/></svg></div>
+                <h3 class="feature-panel__title">Саунд-дизайн</h3>
+              </div>
+            </div>
+            <div class="feature-panel__body-wrap">
+              <div class="feature-panel__body">
+                <p class="feature-panel__intro">Подбираем музыку, добавляем звуковые эффекты и озвучиваем каждое движение на экране, чтобы <span class="hl">картинка и звук работали как одно целое</span>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-panel feature-panel--static glass is-open reveal" data-delay="120">
+            <div class="feature-panel__head">
+              <div class="feature-panel__head-left">
+                <div class="feature-panel__num">4</div>
+                <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M9 6v12M15 6v12"/></svg></div>
+                <h3 class="feature-panel__title">Монтаж</h3>
+              </div>
+            </div>
+            <div class="feature-panel__body-wrap">
+              <div class="feature-panel__body">
+                <p class="feature-panel__intro">Собираем все в динамичный ролик с четким ритмом.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-panel feature-panel--static glass is-open reveal" data-delay="160">
+            <div class="feature-panel__head">
+              <div class="feature-panel__head-left">
+                <div class="feature-panel__num">5</div>
+                <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="13" height="10" rx="1.5"/><rect x="15.5" y="9" width="6" height="10.5" rx="1.3"/><path d="M6.5 19h6"/></svg></div>
+                <h3 class="feature-panel__title">Файлы под площадки</h3>
+              </div>
+            </div>
+            <div class="feature-panel__body-wrap">
+              <div class="feature-panel__body">
+                <p class="feature-panel__intro">Готовим версии для публикации в каналах и боте.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ КАК ПРОХОДИТ РАБОТА ============ -->
+    <section class="section" id="sec-process" data-dot="Этапы">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">PROCESS</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:48px">
+          <div class="pill"><span class="pill__dot"></span>Процесс</div>
+          <h2 class="h2" style="margin-top:24px;max-width:760px">Как проходит работа</h2>
+          <p class="p-body" style="margin-top:20px;max-width:760px;margin-bottom:0">
+            Все исходники и визуалы мы готовим сами. От вас нужно только <span class="hl">согласовать сценарий и промежуточные этапы</span>.
+          </p>
+        </div>
+
+        <div class="process reveal" data-delay="60">
+          <div class="process__line" aria-hidden="true"></div>
+          <div class="process__grid">
+            <div class="process__step">
+              <div class="process__num process__num--active">1</div>
+              <div class="process__card glass">
+                <div class="process__title">Идея и сценарий</div>
+                <div class="process__desc">Предлагаем сюжет и раскадровку. Здесь нужно ваше согласование</div>
+              </div>
+            </div>
+            <div class="process__step">
+              <div class="process__num process__num--active">2</div>
+              <div class="process__card glass">
+                <div class="process__title">Ключевые кадры</div>
+                <div class="process__desc">Сами рисуем главные кадры в новом стиле. Показываем вам промежуточный результат</div>
+              </div>
+            </div>
+            <div class="process__step">
+              <div class="process__num process__num--active">3</div>
+              <div class="process__card glass">
+                <div class="process__title">Анимация</div>
+                <div class="process__desc">Оживляем логотип, графику и эмодзи</div>
+              </div>
+            </div>
+            <div class="process__step">
+              <div class="process__num process__num--active">4</div>
+              <div class="process__card glass">
+                <div class="process__title">Саунд-дизайн</div>
+                <div class="process__desc">Музыка, звуковые эффекты, синхронизация со всем, что движется</div>
+              </div>
+            </div>
+            <div class="process__step">
+              <div class="process__num process__num--active">5</div>
+              <div class="process__card glass">
+                <div class="process__title">Правки и финал</div>
+                <div class="process__desc">Вносим правки и отдаем готовые файлы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ЧТО ВЫ ПОЛУЧИТЕ ============ -->
+    <section class="section" id="sec-result" data-dot="Итог">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">RESULT</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:16px">
+          <div class="pill"><span class="pill__dot"></span>Итог</div>
+          <h2 class="h2" style="margin-top:24px;max-width:680px">Что вы получите</h2>
+        </div>
+
+        <div class="rubric-grid reveal" data-delay="40" style="grid-template-columns:repeat(3,1fr);margin-top:32px">
+          <div class="rubric-item glass"><div class="rubric-item__title">Motion-ролик</div><div class="rubric-item__desc">Готовый motion-ролик на 10 секунд со звуком</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Форматы</div><div class="rubric-item__desc">Версии под нужные форматы публикации</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Исходники</div><div class="rubric-item__desc">Исходные файлы проекта</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ СТОИМОСТЬ ============ -->
+    <section class="section" id="sec-price" data-dot="Стоимость">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">PRICING</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:56px">
+          <div class="pill"><span class="pill__dot"></span>Стоимость</div>
+          <h2 class="h2" style="margin-top:24px">Стоимость и хронометраж</h2>
+        </div>
+
+        <div class="pricing-single reveal" data-delay="30">
+          <div class="pricing-card pricing-card--highlight glass pricing-card--magnetic" id="magneticCard" style="max-width:560px;margin:0 auto">
+            <div class="pricing-card__badge">Под ключ</div>
+            <div class="mono-caption">DROPOTVET MOTION-РОЛИК</div>
+            <div class="pricing-card__price"><span class="pricing-card__amount">550 $</span><span class="pricing-card__period">за ролик</span></div>
+            <p class="pricing-card__desc">Ролик о смене фирменного стиля целиком: от идеи и сценария до готовых файлов</p>
+            <div class="pricing-card__sep pricing-card__sep--highlight"></div>
+            <div class="pricing-card__features">
+              <div class="pricing-card__feature"><span class="pricing-card__check pricing-card__check--highlight"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#504CFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>Хронометраж: <span class="counter" data-count="10">0</span> секунд</div>
+              <div class="pricing-card__feature"><span class="pricing-card__check pricing-card__check--highlight"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#504CFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>Сюжет, ручная анимация, саунд-дизайн и монтаж</div>
+              <div class="pricing-card__feature"><span class="pricing-card__check pricing-card__check--highlight"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#504CFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>Версии под площадки и исходные файлы</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ПРИМЕРЫ РОЛИКОВ ============ -->
+    <section class="section" id="sec-reels" data-dot="Примеры">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">SHOWREEL</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:48px">
+          <div class="pill"><span class="pill__dot"></span>Примеры</div>
+          <h2 class="h2" style="margin-top:24px;max-width:760px">Примеры качества роликов, которые мы выдаем</h2>
+          <p class="p-body" style="margin-top:20px;max-width:760px;margin-bottom:0">
+            Ролики играют без звука. Чтобы услышать <span class="hl">саунд-дизайн</span>, нажмите на значок динамика на экране.
+          </p>
+        </div>
+
+        <div class="reels">
+          <figure class="reel reel--main reveal" data-delay="40">
+            <div class="phone-land">
+              <div class="phone-land__screen">
+                <img class="phone-land__ambient" src="./video/reel-1.jpg" alt="" aria-hidden="true">
+                <video class="phone-land__video" src="./video/reel-1.mp4" poster="./video/reel-1.jpg" muted loop playsinline preload="metadata" aria-label="Пример ролика 1"></video>
+                <span class="reel__play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
+                <div class="reel__controls">
+                  <button type="button" class="reel__btn reel__sound" aria-pressed="false" aria-label="Включить звук">
+                    <svg class="reel__icon-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M22 9l-6 6M16 9l6 6"/></svg>
+                    <svg class="reel__icon-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 010 7M18.5 5.5a9 9 0 010 13"/></svg>
+                  </button>
+                  <button type="button" class="reel__btn reel__full" aria-label="Во весь экран">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+                  </button>
+                </div>
+              </div>
+              <img class="phone-land__overlay" src="./images/phone-frame-landscape.png" alt="" aria-hidden="true">
+            </div>
+          </figure>
+
+          <div class="reels__pair">
+            <figure class="reel reveal" data-delay="80">
+              <div class="phone-land">
+                <div class="phone-land__screen">
+                  <img class="phone-land__ambient" src="./video/reel-2.jpg" alt="" aria-hidden="true">
+                  <video class="phone-land__video" src="./video/reel-2.mp4" poster="./video/reel-2.jpg" muted loop playsinline preload="metadata" aria-label="Пример ролика 2"></video>
+                  <span class="reel__play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
+                  <div class="reel__controls">
+                    <button type="button" class="reel__btn reel__sound" aria-pressed="false" aria-label="Включить звук">
+                      <svg class="reel__icon-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M22 9l-6 6M16 9l6 6"/></svg>
+                      <svg class="reel__icon-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 010 7M18.5 5.5a9 9 0 010 13"/></svg>
+                    </button>
+                    <button type="button" class="reel__btn reel__full" aria-label="Во весь экран">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <img class="phone-land__overlay" src="./images/phone-frame-landscape.png" alt="" aria-hidden="true">
+              </div>
+            </figure>
+
+            <figure class="reel reveal" data-delay="120">
+              <div class="phone-land">
+                <div class="phone-land__screen">
+                  <img class="phone-land__ambient" src="./video/reel-3.jpg" alt="" aria-hidden="true">
+                  <video class="phone-land__video" src="./video/reel-3.mp4" poster="./video/reel-3.jpg" muted loop playsinline preload="metadata" aria-label="Пример ролика 3"></video>
+                  <span class="reel__play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
+                  <div class="reel__controls">
+                    <button type="button" class="reel__btn reel__sound" aria-pressed="false" aria-label="Включить звук">
+                      <svg class="reel__icon-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M22 9l-6 6M16 9l6 6"/></svg>
+                      <svg class="reel__icon-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 010 7M18.5 5.5a9 9 0 010 13"/></svg>
+                    </button>
+                    <button type="button" class="reel__btn reel__full" aria-label="Во весь экран">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <img class="phone-land__overlay" src="./images/phone-frame-landscape.png" alt="" aria-hidden="true">
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" data-dot="Финал">
+      <div class="divider"></div>
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">KOMETA</div>
+      <div class="container section__pad-top footer__inner">
+        <div class="reveal" data-delay="0">
+          <div class="footer__brand">
+            <div class="footer__brand-name">KOMETA</div>
+            <div class="footer__brand-sub">WEB3 AGENCY</div>
+          </div>
+          <h2 class="footer__title">Готовы строить<br>вместе?</h2>
+          <p class="footer__text">
+            Это предложение подготовлено исключительно для DropOtvet. Мы готовы обсудить детали
+            и согласовать старт работы над роликом.
+          </p>
+        </div>
+
+        <div class="footer__bottom reveal" data-delay="200">
+          <div class="mono-caption">© 2026 KOMETA WEB3 AGENCY</div>
+          <div class="footer__bottom-mid">ПОДГОТОВЛЕНО ДЛЯ DROPOTVET, MOTION-РОЛИК</div>
+          <div class="mono-caption">KOMETA.WEB3</div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <button type="button" id="scrollTopBtn" class="scroll-top-btn" aria-label="Наверх">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+  <script src="wow.js"></script>
+</body>
+
+</html>
