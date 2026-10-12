@@ -865,3 +865,11 @@
   right: 15px;
   z-index: 2;
 }
+
+/* .grid-3 в style.css объявлен повторно ниже своих медиазапросов и перебивает их,
+   поэтому на телефоне оставалось три колонки. Длинные слова распирали карточки
+   за край экрана, а секция с overflow: hidden их обрезала без прокрутки. */
+.craft-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 720px) {
+  .craft-grid { grid-template-columns: 1fr; gap: 12px; }
+}
